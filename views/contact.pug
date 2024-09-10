@@ -18,8 +18,12 @@ block content
         label(class='col-md-2 col-form-label font-weight-bold', for='email') Email
         .col-md-8
           input.form-control(type='email', name='email', id='email', autocomplete='email', required)
+      .form-group.row
+        label(class='col-md-2 col-form-label font-weight-bold', for='company') Company
+        .col-md-8
+          input.form-control(type='text', name='company', id='company', autocomplete='organization', required)
     .form-group.row
-      label(class='col-md-2 col-form-label font-weight-bold', for='message') Please describe the issue or your suggestion
+      label(class='col-md-2 col-form-label font-weight-bold', for='message') Message
       .col-md-8
         textarea.form-control(name='message', id='message', rows='7', autofocus=(!unknownUser).toString(), required)
     .form-group
