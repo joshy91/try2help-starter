@@ -5,31 +5,19 @@ block head
 
 block content
   .pb-2.mt-2.mb-4.border-bottom
-    h3 Contact Form
+    h3 Contact Information
 
-  form(method='POST')
-    input(type='hidden', name='_csrf', value=_csrf)
-    if (unknownUser)
-      .form-group.row
-        label(class='col-md-2 col-form-label font-weight-bold', for='name') Name
-        .col-md-8
-          input.form-control(type='text', name='name', id='name', autocomplete='name', autofocus, required)
-      .form-group.row
-        label(class='col-md-2 col-form-label font-weight-bold', for='email') Email
-        .col-md-8
-          input.form-control(type='email', name='email', id='email', autocomplete='email', required)
-      .form-group.row
-        label(class='col-md-2 col-form-label font-weight-bold', for='company') Company
-        .col-md-8
-          input.form-control(type='text', name='company', id='company', autocomplete='organization', required)
-    .form-group.row
-      label(class='col-md-2 col-form-label font-weight-bold', for='message') Message
-      .col-md-8
-        textarea.form-control(name='message', id='message', rows='7', autofocus=(!unknownUser).toString(), required)
-    .form-group
-      .offset-md-2.col-md-8.p-1
-        .g-recaptcha(data-sitekey=sitekey)
-        br
-        button.btn.btn-primary(type='submit')
-          i.far.fa-envelope.fa-sm.iconpadding
-          | Send
+  .contact-info
+    .pb-2
+      h5 Phone
+      p 210-379-7773
+    
+    .pb-2
+      h5 Mailing Address
+      p PO Box 780487 San Antonio, TX 78278
+    
+    .pb-2
+      h5 Email Address
+      p 
+        a(href='mailto:tblc@txblc.onmicrosoft.com') tblc@txblc.onmicrosoft.com
+
