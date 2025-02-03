@@ -1,43 +1,51 @@
 extends layout
 
 block content
-  h1 Texas Bottom Line Consultants, LLC
-  p.lead Helping Texas businesses reduce their tax liability with a proven track record of success.
-  hr
-  .row
-    .col-md-6
-      h2 Statement of Faith
-      p At TBLC, we combine a philosophy of honesty, professionalism, and strict adherence to legal requirements. With a no-risk contingency model, our clients only pay when results are achieved, and our success rate of 97% speaks for itself—always delivering substantial savings.
-      p
-        a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/STATEMENT%20OF%20FAITH.pdf?sp=r&st=2024-09-11T03:34:42Z&se=2025-03-01T12:34:42Z&spr=https&sv=2022-11-02&sr=b&sig=x6NSFTo26VWIUjbj2N47uiGVuMuB2Q1JCGSNfZSAMqU%3D', role='button') Learn More »
-    .col-md-6
-      h2 Article: Texas Retailers' Double Tax Burden
-      p Many Texas retailers are unknowingly paying double in property taxes due to inaccurate appraisals of inventory. At TBLC, we help businesses navigate Texas Property Tax law and reclaim potentially tens of thousands of dollars in overpaid taxes.
-      p
-        a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/Article%2024%20TxPropTax.pdf?sp=r&st=2024-12-10T17:22:51Z&se=2025-04-02T00:22:51Z&spr=https&sv=2022-11-02&sr=b&sig=kOBC4dhB7DeQQRSNb6R4LW1emr93Pt71%2FY%2FeVsrnEpY%3D', role='button') Find Out How »
-    .col-md-6
-      h2 Insightful Data on Inventory Valuation
-      p Through data analysis and valuation techniques, we show that less than half of a retailer's inventory accounts for 80% of gross margin. Our method delivers accurate market value assessments, ensuring you don’t overpay in taxes on unprofitable inventory.
-      p
-        a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/TBLC%20BarCharts%20to%2023.pdf?sp=r&st=2024-09-26T02:59:09Z&se=2025-04-01T10:59:09Z&spr=https&sv=2022-11-02&sr=b&sig=BMypUqiS0gfGhGPoKldPliBbQADAI9lUMrBoOXqNCIs%3D', role='button') See the Data »
-    .col-md-6
-      h2 Legal Comment: Texas Inventory Tax Missteps
-      p TBLC provides expert legal commentary on the complex world of ad valorem taxation in Texas. We advocate for businesses by ensuring that appraisal methods reflect true market value, as mandated by the Texas Constitution.
-      p
-        a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/Tim%20Johnson%20Comment.pdf?sp=r&st=2024-09-11T03:38:12Z&se=2025-03-01T12:38:12Z&spr=https&sv=2022-11-02&sr=b&sig=0Jy2XLOp4hoczEoblmjTan9GAjjwWFLCFssLvJzN1B0%3D', role='button') Read Legal Comment »
-    .col-md-6
-      h2 Model Snippet
-      p The model used by TBLC is based on a well-established legal and economic framework. The appraisal methodology adheres to Texas Property Tax Code (PTC) and Supreme Court precedents, focusing on determining the profitability of the inventory in question to estimate its market value. This approach ensures that tax assessments are accurate and legally sound, leading to significant reductions in property tax liabilities for clients. The goal is to determine the most probable price a purchaser would pay for the entire inventory unit, reflecting its true market value.
-      p
-        a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/RXJ%2023%20Model%20Smpl%20p%20iv-3%20TBLC.pdf?sp=r&st=2024-09-12T05:16:29Z&se=2025-03-01T14:16:29Z&spr=https&sv=2022-11-02&sr=b&sig=T3FI2Iv3pqFm2cxFDOmATnprdIlPNOb9KXSpfZfNjpQ%3D', role='button') See Model »
-    .col-md-6
-      h2 Results
-      p The table summarizes appraised values from various Texas CADs, ARBs, Arbitrators, SOAH Judge, and Courts, as a percentage of Historical Cost New (HCN). While none of these entities fully embraced the valuation model, they generally accepted or did not oppose its findings due to strong supporting evidence. Many Texas CADs accepted the Good Faith Estimate (GFE) of Market Value (MV) at around 50% of HCN. Over 90% of the cases resulted in accepted or near-GFE values. Some accounts remain pending with settlements expected.
-      p
-        a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/TBLC%20Results%2009-24.pdf?sp=r&st=2024-09-30T00:35:00Z&se=2025-05-01T08:35:00Z&spr=https&sv=2022-11-02&sr=b&sig=JOP%2FBudEvgX1UTAt1Soi39FQxs5d4O8XqZdq%2BUAG5X8%3D', role='button') Review Results »    
-    .col-md-6
-      h2 Contract Draft
-      p The contract outlines the terms and services offered by Texas Bottom Line Consultants, LLC, including property tax rendition preparation, representation in protests or appeals, and negotiations with County Appraisal Districts (CAD). The contract covers all of the client's locations in Texas that are subject to personal property tax. Additionally, the contract details fees, cancellation policies, and agreement renewal terms, ensuring transparency and clarity between the client and TBLC.
-      p
-        a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/TBLC%2025%20Contract%20draft%20v2.pdf?sp=r&st=2024-09-26T02:57:12Z&se=2025-04-01T10:57:12Z&spr=https&sv=2022-11-02&sr=b&sig=yruuYQuBc21cPXtZYPN%2FK6IuiWKPq28YEB5M%2Bhpd2F4%3D', role='button') Read Contract »
+  //- Full-Screen Video Section
+  section.fullscreen-video
+    video.autoplay.muted.loop
+      source(src='https://tblcwebsitestorage.blob.core.windows.net/videos/HeartfeltCommunityEmbrace.mp4', type='video/mp4')
+      Your browser does not support the video tag.
 
+    //- Dark Mask Overlay
+    .video-overlay
+
+    //- Quote Overlay
+    .quote-container
+      h1 "Nourishing Hope, One Meal at a Time"
+      p "Committed to feeding the homeless with compassion and transparency, ensuring every donation makes a real difference."
+
+  //- Scroll Down Indicator
+  a.scroll-down(href="#content") ↓ Scroll Down
+
+  //- Content Section
+  section#content.content
+    h1 Try2Help Charity
+    p.lead Dedicated to feeding the homeless, providing essentials like clothing and blankets, and ensuring financial transparency to maximize every donation's impact.
+    hr
+    .row
+      .col-md-6
+        h2 Faith in Action: Providing Hope, Help, and Healing
+        p Try2Help (T2H) is a nonprofit outreach ministry dedicated to demonstrating Christ’s love by providing food, clothing, and essential support to those in need, inspired by Matthew 25:35. As part of the San Antonio Baruch Hashem Congregation, T2H operates with a commitment to service, compassion, and community support while maintaining full compliance with 501(c)(3) nonprofit regulations.
+        p
+          a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/STATEMENT%20OF%20FAITH.pdf?sp=r&st=2024-09-11T03:34:42Z&se=2025-03-01T12:34:42Z&spr=https&sv=2022-11-02&sr=b&sig=x6NSFTo26VWIUjbj2N47uiGVuMuB2Q1JCGSNfZSAMqU%3D', role='button') Our Purpose »
+      .col-md-6
+        h2 Born from Need, Built on Faith, Growing in Service
+        p Try2Help was founded in response to a critical need for better management of resources and reliable volunteer support in serving the homeless community. Emerging as an outreach ministry of Baruch Hashem Congregation, it was established with the support of Rabbi Roi Garcia and led by Robert Johnson, who initiated structural development, financial transparency, and volunteer coordination to create a sustainable and impactful organization.
+        p
+          a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/TBLC%20BarCharts%20to%2023.pdf?sp=r&st=2024-09-26T02:59:09Z&se=2025-04-01T10:59:09Z&spr=https&sv=2022-11-02&sr=b&sig=BMypUqiS0gfGhGPoKldPliBbQADAI9lUMrBoOXqNCIs%3D', role='button') Our History »
+      .col-md-6
+        h2 Serving with Love, Giving with Integrity, United in Faith
+        p Try2Help is a Christian outreach ministry dedicated to serving the homeless and those in need by providing food, clothing, and support, inspired by Matthew 25:35. Committed to transparency and accountability, Try2Help operates with open financial records and a mission to unite believers across congregations in the shared goal of compassionate service.
+        p
+          a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/Article%2024%20TxPropTax.pdf?sp=r&st=2024-12-10T17:22:51Z&se=2025-04-02T00:22:51Z&spr=https&sv=2022-11-02&sr=b&sig=kOBC4dhB7DeQQRSNb6R4LW1emr93Pt71%2FY%2FeVsrnEpY%3D', role='button') Our Mission »
+      .col-md-6
+        h2 Order with Purpose: Biblical Principles, Fair Decisions, Strong Leadership
+        p Try2Help follows Robert’s Rules of Order (RONR) as its foundational parliamentary guide to ensure structured, fair, and transparent decision-making within the organization. Rooted in biblical principles of order, accountability, and collective governance, these rules help facilitate respectful discussions, efficient leadership, and responsible stewardship as Try2Help serves those in need.
+        p
+          a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/Tim%20Johnson%20Comment.pdf?sp=r&st=2024-09-11T03:38:12Z&se=2025-03-01T12:38:12Z&spr=https&sv=2022-11-02&sr=b&sig=0Jy2XLOp4hoczEoblmjTan9GAjjwWFLCFssLvJzN1B0%3D', role='button') Our Parlimentary Rules »
+      .col-md-6
+        h2 Guided by Faith, Governed with Purpose: The Heart of Try2Help
+        p The Try2Help Bylaws establish the organization as an autonomous outreach ministry under the governance of Baruch Hashem Congregation, ensuring compliance with the Non-Profit Corporation Act of Texas and IRS 501(c)(3) regulations. These bylaws define Try2Help’s purpose of serving those in need, outline its operational structure, and ensure alignment with biblical principles and legal requirements for nonprofit organizations.
+        p
+          a.btn.btn-primary(href='https://tblcwebsitestorage.blob.core.windows.net/pdfs/RXJ%2023%20Model%20Smpl%20p%20iv-3%20TBLC.pdf?sp=r&st=2024-09-12T05:16:29Z&se=2025-03-01T14:16:29Z&spr=https&sv=2022-11-02&sr=b&sig=T3FI2Iv3pqFm2cxFDOmATnprdIlPNOb9KXSpfZfNjpQ%3D', role='button') Our By-Laws »
